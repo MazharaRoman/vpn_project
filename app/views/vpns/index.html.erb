@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vpns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Server</th>
+      <th>User</th>
+      <th>Login</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vpns.each do |vpn| %>
+      <tr>
+        <td><%= vpn.server %></td>
+        <td><%= vpn.user %></td>
+        <td><%= vpn.login %></td>
+        <td><%= vpn.password %></td>
+        <td><%= link_to 'Show', vpn %></td>
+        <td><%= link_to 'Edit', edit_vpn_path(vpn) %></td>
+        <td><%= link_to 'Destroy', vpn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vpn', new_vpn_path %>

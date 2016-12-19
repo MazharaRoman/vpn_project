@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @payment_type.year %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @payment_type.month %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @payment_type.day %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @payment_type.price %>
+</p>
+
+<p>
+  <strong>Server:</strong>
+  <%= @payment_type.server %>
+</p>
+
+<%= link_to 'Edit', edit_payment_type_path(@payment_type) %> |
+<%= link_to 'Back', payment_types_path %>

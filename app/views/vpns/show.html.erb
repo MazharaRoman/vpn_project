@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Server:</strong>
+  <%= @vpn.server %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @vpn.user %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @vpn.login %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @vpn.password %>
+</p>
+
+<%= link_to 'Edit', edit_vpn_path(@vpn) %> |
+<%= link_to 'Back', vpns_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  ip: MyString
+  region: MyString
+  server_user: MyString
+  key: MyString
+  configPath: MyString
+
+two:
+  type: 
+  ip: MyString
+  region: MyString
+  server_user: MyString
+  key: MyString
+  configPath: MyString
